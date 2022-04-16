@@ -7,7 +7,7 @@ import useSWR from 'swr';
 const fetcher = (url: string) => fetch(url).then(response => response.json());
 
 function App() {
-  const { data, error } = useSWR("https://net6testapp.azurewebsites.net/test", fetcher);
+  //const { data, error } = useSWR("https://net6testapp.azurewebsites.net/test", fetcher);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -27,7 +27,7 @@ function App() {
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-      {data}
+      test
     </Box>
   );
 }
