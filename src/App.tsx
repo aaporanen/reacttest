@@ -4,7 +4,7 @@ import { AppBar, Button, IconButton, Toolbar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import useSWR from 'swr';
 
-const fetcher = (url: string) => fetch(url).then(response => response.json());
+const fetcher = (url: string) => fetch(url, { mode: 'cors' }).then(response => response.json());
 
 function App() {
   const { data, error } = useSWR("https://net6testapp.azurewebsites.net/test", fetcher);
