@@ -27,7 +27,7 @@ function App() {
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-      {data}
+      {JSON.stringify(data)}
     </Box>
   );
 }
